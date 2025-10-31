@@ -1,26 +1,28 @@
 
-.SectionFast {
+.news .section-fast {
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto; 
   display: grid;
+  margin-top: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 20px; 
+  
 }
 
-.SectionFast > div {
-  background: #f9f9f9;
+
+.news .section-fast > div {
+ 
+  
   
   overflow: hidden;
-  
+ 
 }
-
 
 
 .imgName {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  
+  
   display: block;
 }
 
@@ -29,43 +31,54 @@
   font-size: 16px;
   font-weight: 800;
   color: #000;
-  padding: 10px;
+  
+ 
+
   line-height: 1.5;
+  padding-top: 15px; 
 }
 
-.title-section {
+
+.news .title-section {
   max-width: 1300px;
   margin: 0 auto;
   padding: 20px 20px 0 20px;
 }
 
-.title-section h2 {
+.news .title-section h2 {
   font-size: 24px;
   border-left: 4px solid #0066ff;
   padding-left: 10px;
+  color: #333; 
+  margin: 0; 
 }
+
+
 
 
 @media (max-width: 768px) {
-  .imgName {
-    height: 150px;
+  .news .imgName {
+    height: 300px; 
   }
-  .pregrap {
-    font-size: 14px;
+  .news .pregrap {
+    font-size: 14px; 
   }
-  .title-section h2 {
-    font-size: 20px;
+  .news .title-section h2 {
+    font-size: 20px; 
   }
 }
 
-@media (max-width: 480px) {
-  .SectionFast {
-    grid-template-columns: 1fr;
+@media (max-width: 400px) {
+  .news .section-fast {
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+    padding: 15px;
   }
-  .imgName {
-    height: 140px;
+  .news .imgName {
+    height: 160px; 
   }
-  .pregrap {
-    font-size: 13px;
+  .news .pregrap {
+    font-size: 13px; 
+    padding: 10px;
   }
 }
